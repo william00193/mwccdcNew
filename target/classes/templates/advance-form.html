@@ -1,0 +1,47 @@
+<html>
+<head>
+
+<style>
+
+	body {margin: 20px auto;
+	background-color: black;
+	text-align: center;}
+	
+	thead {background-color: beige;
+	font-size: 1.1rem;}
+	
+	table {background-color: white;
+	text-align: center;
+	width: 40%;
+	margin: 10px auto;
+	border: 2px solid white;}
+	
+	td {padding: 10px;}
+	
+	h1 {color: white;}
+
+</style>
+
+</head>
+	<body>
+  <h1><em>List of Users</em></h1>
+  <table>
+    <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Gender</th>
+        <th>State</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr th:each="user : ${users1}">
+        <td th:text="${user.firstName}"></td>
+        <td th:text="${user.lastName}"></td>
+        <td th:text="${user.gender}"></td>
+        <td th:text="${user.address}"></td>
+      </tr>
+    </tbody>
+  </table>
+	</body>
+</html>

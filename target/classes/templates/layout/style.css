@@ -1,0 +1,13 @@
+body {
+	background-color: #e97f03 !important;
+	margin: 10px auto;
+	width: 100vw;
+}
+
+footer {
+	background-color: green;
+}
+
+div {
+	background-color: blue; 
+}
